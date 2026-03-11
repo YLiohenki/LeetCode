@@ -1,4 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using LeetCode;
+
 Console.WriteLine("Hello, World!");
 
 //var MedianFinder = new MedianFinder();
@@ -10,12 +12,19 @@ Console.WriteLine("Hello, World!");
 //MedianFinder.AddNum(3);
 //Console.WriteLine(MedianFinder.FindMedian());
 
-var DecodeWays = new DecodeWays();
+//var c = new ProductofArrayExceptSelf();
+//
+//var result = c.ProductExceptSelf(Console.ReadLine().Split(' ').Select(s => int.Parse(s)).ToArray());
+//
+//Console.WriteLine(string.Join(',', result));
 
-var str = Console.ReadLine();
+//var s = new Solution6();
+//Console.WriteLine(s.Convert("PAYPALISHIRING", 4));
+//
+//Console.WriteLine(s.Convert("A", 1));
+var s = new Solution7();
+Console.WriteLine(s.Reverse(123));
 
-var number = DecodeWays.NumDecodings(str);
-
-Console.WriteLine(number);
+Console.WriteLine(s.Reverse(- 2147483648));
 
 Console.ReadKey();
